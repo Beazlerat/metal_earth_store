@@ -10,21 +10,18 @@ import history from '../../history';
 class SignUpForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
-        const links = [
+        const info = [
             {
                 _id: 0,
-                title: 'Not registered? create accout here?',
-                onClick: () => history.push('/signup')
+                title: 'at least 6 chracters'
             },
             {
                 _id: 1,
-                title: 'forgot account email?',
-                onClick: () => console.log('forgot emial?')
+                title: 'at least one number'
             },
             {
                 _id: 2,
-                title: 'forgot password?',
-                onClick: () => console.log('forgot password')
+                title: 'at least one symbol'
             }
         ]
         return (
@@ -53,7 +50,7 @@ class SignUpForm extends Component {
                     component={FormInput}
                 />
                                         
-                <Field className='sign-up-form__confirm-password' 
+                <Field className='sign-up-form__confirm' 
                     type='password' 
                     title='Confirm Password' 
                     placeholder='Confirm Password' 
@@ -69,16 +66,16 @@ class SignUpForm extends Component {
                 <div className='sign-up-form__line'></div>
 
                 <Field className='sign-up-form__login' 
-                    onClick={() => console.log('tryna submit')}
+                    onClick={() => history.push('/account')}
                     type='submit' 
-                    title='Login' 
+                    title='Create Login' 
                     placeholder='login' 
                     name='login' 
                     component={FormButton}
                 />
 
                 <Field className='sign-up-form__back' 
-                    onClick={() => console.log('tryna got back')}
+                    onClick={() => history.push('/signin')}
                     type='button' 
                     title='Back' 
                     placeholder='Back' 
@@ -86,7 +83,7 @@ class SignUpForm extends Component {
                     short={true}
                     component={FormButton}
                 />
-                <Details className='sign-up-form__details' title='QuickLinks' links={links}/>
+                <Details className='sign-up-form__details' title='Password Requirements' info={info}/>
             </form>
         )
     }
