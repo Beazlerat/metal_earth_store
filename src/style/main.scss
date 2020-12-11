@@ -30,6 +30,9 @@ body {
 //shop
 @import 'shop/shop.scss';
 @import 'shop/shop-search-bar.scss';
+//quantity
+@import 'quantity.scss';
+@import 'green-price-tag.scss';
 html {
     font-size: 62.5%; // 1rem is 10px
 }
