@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import ShopProduct from './shopProduct';
 import ShopSearchBar from './shopSearchBar';
+import ShopCart from './shopCart';
 
 class Shop extends Component {
     componentDidMount() {
@@ -27,7 +28,6 @@ class Shop extends Component {
     }
 
     onSubmit = (fields) => {
-        console.log(fields);
         this.props.filterProductsWithQuery(fields)
     }
 
@@ -44,6 +44,9 @@ class Shop extends Component {
                         })
                     }
                 </div>
+                    {
+                        this.state.showCart ? <ShopCart className='shop__cart'/> : ''
+                    }
             </div>
         )
     }
