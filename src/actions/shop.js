@@ -65,49 +65,56 @@ export function fetchShopProducts() {
                 title: 'JavaScript in the Browser',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 1,
                 title: 'Graph Database',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 2,
                 title: 'Full Stack Developement',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 1, 4]
+                belongsTo: [0, 1, 4],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 3,
                 title: 'User Interface Design',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 4,
                 title: 'JavaScript Developement',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 5,
                 title: 'User Experience Design',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 6,
                 title: 'Advanced OOP',
                 description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                 price: 1.99,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: 'http://via.placeholder.com/80x80'
             }
         ]
     })

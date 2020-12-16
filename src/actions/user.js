@@ -30,7 +30,8 @@ export function fetchCartProducts() {
                     title: 'JavaScript in the Browser',
                     description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                     price: 1.99,
-                    belongsTo: [0, 1]
+                    belongsTo: [0, 1],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -41,7 +42,8 @@ export function fetchCartProducts() {
                     title: 'Graph Database',
                     description: 'So in this video were going to set up another action creator to fetch some products and then were going to display them in our application. So lets start off by going up here and going into',
                     price: 1.99,
-                    belongsTo: [0, 6]
+                    belongsTo: [0, 6],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 1
             }
