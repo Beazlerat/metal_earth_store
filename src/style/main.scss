@@ -45,6 +45,9 @@ body {
 @import 'order/review.scss';
 @import 'order/reviewForm.scss';
 @import 'order/reviewProduct.scss';
+//info
+@import 'information/payment.scss';
+@import 'information/shipping.scss';
 html {
     font-size: 62.5%; // 1rem is 10px
 }
